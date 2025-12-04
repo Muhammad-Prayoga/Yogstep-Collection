@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogstep Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">YC</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li>
+                        <a href="produk.html">Produk &#8617;</a>
+                        <ul class="dropdown">
+                            <li><a href="sandal pria.html">Sandal Pria</a></li>
+                            <li><a href="sandal wanita.html">Sandal Wanita</a></li>
+                            <li><a href="sandal anak.html">Sandal Anak</a></li>
+                            <li><a href="sandal refleksi.html">Sandal Refleksi</a></li>
+                            <li><a href="sandal hotel.html">Sandal Hotel</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                🛒<span id="cartCount">0</span>
+            </div>
+
+            <div class="cart-sidebar">
+                <div class="cart-header">
+                    <h3>Keranjang Belanja</h3>
+                    <span id="closeCart" class="close-cart">×</span>
+                </div>
+                <div class="cart-items" id="cartItems"></div>
+                <div class="cart-footer">
+                    <p>Total: <span id="cartTotal">Rp0</span></p>
+                    <button class="checkout-btn"><a
+                            href="https://wa.me/6285282142032?text=Halo%20kak,%20saya%20ingin%20membeli%20produk%20sandal.%20Apakah%20masih%20tersedia?">Checkout</a></button>
+                </div>
+            </div>
+            <div id="cartBackdrop" class="backdrop"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-2 fade">
+                <h1>Yogstep Collection</h1>
+                <p>Langkah Nyaman Gaya Maksimal</p>
+                <a href="produk.html" class="button">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="asset/yogstep.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="slidder">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="asset/slide 1.jpg">
+                <img id="slide-2" src="asset/slide 2.jpg">
+                <img id="slide-3" src="asset/slide 3.jpg">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="produk">
+        <h2 class="title">Featured Product</h2>
+        <div class="row-produk">
+            <div class="card fade">
+                <div class="product-wrapper">
+                    <img src="asset/asset.produk/sandal pria 1.png">
+                    <h4>Sandal Casual Pria</h4>
+                    <p>Rp 120.000</p>
+                    <div class="rating">
+                        <p>&#9733; 4.9 10RB Terjual</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/6285282142032?text=Halo%20kak,%20saya%20ingin%20membeli%20produk%20sandal.%20Apakah%20masih%20tersedia?"
+                    class="btn-product">Beli Sekarang</a>
+                <button class="btn-cart"
+                    onclick="addToCart('Sandal Casual Pria', 120000, 'asset/asset.produk/sandal pria 1.png')">
+                    Tambah ke Keranjang
+                </button>
+            </div>
+
+            <div class="card fade">
+                <div class="product-wrapper">
+                    <img src="asset/asset.produk/sandal pria 2.png">
+                    <h4>Sandal Gunung Outdoor Pria</h4>
+                    <p>Rp 245.000</p>
+                    <div class="rating">
+                        <p>&#9733; 4.9 10RB Terjual</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/6285282142032?text=Halo%20kak,%20saya%20ingin%20membeli%20produk%20sandal.%20Apakah%20masih%20tersedia?"
+                    class="btn-product">Beli Sekarang</a>
+                <button class="btn-cart"
+                    onclick="addToCart('Sandal Gunung Outdoor Pria', 245000, 'asset/asset.produk/sandal pria 2.png')">
+                    Tambah ke Keranjang
+                </button>
+            </div>
+
+            <div class="card fade">
+                <div class="product-wrapper">
+                    <img src="asset/asset.produk/sandal pria 3.png">
+                    <h4>Sandal Kulit Semi Formal Pria</h4>
+                    <p>Rp 155.000</p>
+                    <div class="rating">
+                        <p>&#9733; 4.9 10RB Terjual</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/6285282142032?text=Halo%20kak,%20saya%20ingin%20membeli%20produk%20sandal.%20Apakah%20masih%20tersedia?"
+                    class="btn-product">Beli Sekarang</a>
+                <button class="btn-cart"
+                    onclick="addToCart('Sandal Kulit Semi Formal Pria', 155000, 'asset/asset.produk/sandal pria 3.png')">
+                    Tambah ke Keranjang
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="offer">
+        <div class="row">
+            <div class="col-5 fade">
+                <div class="col-5-card">
+                    <img src="asset/asset.produk/sandal pria 4.png" class="offer-img">
+                </div>
+            </div>
+            <div class="col-5 fade">
+                <h5>Sandal Terbaik di Toko Kami</h5>
+                <h1>Sandal Selop Pria</h1>
+                <small>Sandal Casual Pria ini dirancang untuk kamu yang mengutamakan kenyamanan dan gaya dalam
+                    aktivitas sehari-hari. Terbuat dari material berkualitas yang ringan dan empuk, Sandal ini
+                    memberikan rasa nyaman meski dipakai seharian. Desainnya yang simpel namun tetap modern
+                    membuatnya cocok digunakan untuk jalan santai, Bepergian, Hingga aktivitas lainnya</small>
+                <br>
+                <a href="https://wa.me/6285282142032?text=Halo%20kak,%20saya%20ingin%20membeli%20produk%20sandal.%20Apakah%20masih%20tersedia?"
+                    class="button">Beli Sekarang &#8594;</a>
+                <button class="btn-cart1"
+                    onclick="addToCart('Sandal Selop Pria', 89000, 'asset/asset.produk/sandal pria 4.png')">
+                    Tambah ke Keranjang
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section class="wa-guide-section">
+        <h2 class="wa-guide-title">Panduan Pembelian via WhatsApp</h2>
+        <p class="wa-guide-subtitle">Ikuti langkah mudah berikut untuk melakukan pemesanan melalui WhatsApp.</p>
+
+        <div class="wa-guide-container">
+
+            <div class="wa-card fade-wa">
+                <div class="wa-icon">📌</div>
+                <h3>Pilih Produk</h3>
+                <p>Telusuri produk yang Anda inginkan lalu catat nama atau screenshot produk tersebut.</p>
+            </div>
+
+            <div class="wa-card fade-wa">
+                <div class="wa-icon">🛒</div>
+                <h3>Kirim Detail Produk</h3>
+                <p>Kirimkan nama produk, ukuran, dan jumlah ke WhatsApp kami.</p>
+            </div>
+
+            <div class="wa-card fade-wa">
+                <div class="wa-icon">💬</div>
+                <h3>Konfirmasi Ketersediaan</h3>
+                <p>Admin kami akan mengecek stok dan mengirimkan detail pesanan.</p>
+            </div>
+
+            <div class="wa-card fade-wa">
+                <div class="wa-icon">📦</div>
+                <h3>Proses Pengemasan</h3>
+                <p>Pesanan Anda akan dikemas dengan aman dan rapi.</p>
+            </div>
+
+            <div class="wa-card fade-wa">
+                <div class="wa-icon">🚚</div>
+                <h3>Pengiriman</h3>
+                <p>Barang dikirim menggunakan ekspedisi pilihan Anda.</p>
+            </div>
+
+            <div class="wa-card fade-wa">
+                <div class="wa-icon">📲</div>
+                <h3>Pesanan Sampai</h3>
+                <p>Pesanan tiba di alamat Anda. Silakan konfirmasi penerimaan.</p>
+            </div>
+
+        </div>
+
+        <a href="https://wa.me/6285282142032?text=Halo%20kak,%20saya%20ingin%20membeli%20produk%20sandal.%20Apakah%20masih%20tersedia?"
+            class="wa-order-btn" target="_blank">
+            Chat Admin via WhatsApp 📞
+        </a>
+    </section>
+
+
+    <div class="footer">
+        <div class="row">
+
+            <!-- Kolom 1 -->
+            <div class="footer-col-3 footer-section">
+                <div class="footer-header">
+                    <h3>Tentang</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <ul class="footer-content">
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                    <li><a href="syarat & ketentuan.html">Syarat & Ketentuan</a></li>
+                </ul>
+            </div>
+
+            <!-- Kolom 2 -->
+            <div class="footer-col-4 footer-section">
+                <div class="footer-header">
+                    <h3>Layanan Pelanggan</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <ul class="footer-content">
+                    <li><a href="panduan ukuran.html">Panduan Ukuran</a></li>
+                    <li><a href="kebijakan pengembalian.html">Kebijakan Pengembalian</a></li>
+                    <li><a href="kontak kami.html">Kontak Kami</a></li>
+                </ul>
+            </div>
+
+            <!-- Kolom 3 -->
+            <div class="footer-col-5 footer-section">
+                <div class="footer-header">
+                    <h3>Sosial Media Kami</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <ul class="footer-content">
+                    <li>Instagram:<a href="#"> @yogstep_collection</a></li>
+                    <li>Whatsapp:<a
+                            href="https://wa.me/6281234567890?text=Halo%20kak,%20saya%20ingin%20membeli%20produk%20sandal.%20Apakah%20masih%20tersedia?">
+                            +62 852-8214-2032</a></li>
+                    <li>Web kami: <a href="#">Yogstep Collection</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr>
+        <p class="copyright">Copyright 2025 - Yogstep Collection</p>
+    </div>
+</body>
+
+</html>
